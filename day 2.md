@@ -359,3 +359,7 @@ public class Main
 }   
 }
 ```
+## Harshad Number
+```java[]
+
+```
