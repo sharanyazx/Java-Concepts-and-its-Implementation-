@@ -59,3 +59,61 @@ public class Main
 			
 }
 ````
+### Output
+````java []
+Enter number =15
+Enter number =5
+Sum of number =20
+Subraction of number =10
+Multiply of number =75
+Divison of number =3
+````
+# Area of Triangle
+````java []
+import java.util.Scanner;
+
+class Triangle {
+    private int b, h;
+
+    // Method to set the base and height
+    public void setBaseAndHeight(int base, int height) {
+        b = base;
+        h = height;
+    }
+
+    // Method to calculate the area of the triangle
+    public int Area() {
+        int a = b * h;
+        int c = a / 2;
+        return c;  // Return the calculated area
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        // Get input for base and height
+        System.out.print("Enter base: ");
+        int x = sc.nextInt();
+        System.out.print("Enter height: ");
+        int y = sc.nextInt();
+        
+        // Create a Triangle object
+        Triangle tr = new Triangle();
+        
+        // Set base and height using the setter method
+        tr.setBaseAndHeight(x, y);
+        
+        // Call the Area method and print the result
+        int result = tr.Area();
+        System.out.println("The area of the triangle is: " + result);
+    }
+}
+
+````
+````java []
+Enter base: 32
+Enter height: 32
+The area of the triangle is: 512
+````
