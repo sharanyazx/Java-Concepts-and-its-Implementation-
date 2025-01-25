@@ -421,9 +421,40 @@ First array 1 2 3 4 5
 Second array 6 7 8 9 10 
 Merged array 1 2 3 4 5 6 7 8 9 10 
 ````
+## Removing Duplicates and Printing Duplicate elements
 ````java []
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int a[] = {1,23,4,23,5};
+        Arrays.sort(a);
+        System.out.println();
+        System.out.print("After removing Duplicates   ");
+        for(int i=0;i<a.length;i++){
+            if(i==0||a[i]!=a[i-1]){
+                System.out.print(a[i]+" ");
+            }
+        }
+        System.out.println();
+        System.out.print("Duplicate value ");
+        for(int i=0;i<a.length-1;i++){
+            if(a[i]==a[i+1]){
+                System.out.print(a[i]+" ");
+                continue;
+            }
+        
+        
+        }
+        
+    }
+}
+        
+        
 ````
 ````java []
+
+After removing Duplicates    1 4 5 23 
+Duplicate value 23 
 ````
 ````java []
 ````
