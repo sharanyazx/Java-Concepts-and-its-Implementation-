@@ -106,17 +106,20 @@ class LinkedList {
 
 /*
 output 
-"C:\Program Files\Java\jdk-23\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.2\lib\idea_rt.jar=64942:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.2\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\A\IdeaProjects\JavaPlacement\out\production\JavaPlacement LinkedList
-First Insertion 
+
 Sharanya's --> NULL
 Insertion at  First
 is --> Sharanya's --> NULL
+
 Insertion at First 
 who --> is --> Sharanya's --> NULL
+
 Last Insertion 
 who --> is --> Sharanya's --> Best Friend  --> NULL
+
 First Deletion  
 is --> Sharanya's --> Best Friend  --> NULL
+
 Last Deletion  
 is --> Sharanya's --> NULL
 
