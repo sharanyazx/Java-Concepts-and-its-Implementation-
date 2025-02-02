@@ -50,10 +50,10 @@ class LinkedList {
     public static void main(String[] args) {
         LinkedList link = new LinkedList();
         // function calling
-        link.addFirst("Sharanya");
+        link.addFirst("Sharanya's");
         link.addFirst("is");
-        link.addFirst("Hello");
+        link.addFirst("who");
         link.addLast("Best Friend ");
-        link.printList();
+        link.printList();  // Output -- "  who--> is--> Sharanya's--> Best Friend "
     }
 }
