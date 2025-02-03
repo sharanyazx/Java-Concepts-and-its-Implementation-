@@ -1,4 +1,4 @@
-
+```java []
 import java.util.LinkedList;
 
 public class Main {
@@ -26,3 +26,4 @@ public class Main {
     
   }
 }
+```
