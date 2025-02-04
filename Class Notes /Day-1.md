@@ -1,4 +1,4 @@
-
+## Alphabet ,vowel or digit
 ```java []
 import java.util.*;
 public class Main
@@ -28,7 +28,7 @@ public class Main
 		}
 }
 ```
-
+## leap year
 ```java []
 import java.util.*;
 public class Main
@@ -46,16 +46,9 @@ public class Main
 }
 }
 ```
-
+## Profit or loss
 ```java []
-/******************************************************************************
 
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 import java.util.*;
 public class Main
 {
@@ -77,7 +70,7 @@ public class Main
 
 
 ```
-
+##
 ```java []
 import java.util.*;
 public class Main
@@ -98,7 +91,7 @@ public class Main
 	 }
 }
 ```
-
+## year ,week,days
 ``` java []
 
 import java.util.*;
@@ -118,6 +111,7 @@ public class Main
 
 
 ```
+## hr,min,sec
 ``` java []
 
 import java.util.*;
@@ -137,7 +131,7 @@ public class Main
 
 
 ``` 
-
+## hr,min,sec,days
 ```java []
 
 import java.util.*;
