@@ -270,57 +270,73 @@ public class Main
 ```
 ## Armstrong number
 ```java []
-import java.util.Scanner;  
-import java.lang.Math;  
-public class ArmstsrongNumberExample2  
-{  
-//function to check if the number is Armstrong or not  
-static boolean isArmstrong(int n)   
-{   
-int temp, digits=0, last=0, sum=0;   
-//assigning n into a temp variable  
-temp=n;   
-//loop execute until the condition becomes false  
-while(temp>0)    
-{   
-temp = temp/10;   
-digits++;   
-}   
-temp = n;   
-while(temp>0)   
-{   
-//determines the last digit from the number      
-last = temp % 10;   
-//calculates the power of a number up to digit times and add the resultant to the sum variable  
-sum +=  (Math.pow(last, digits));   
-//removes the last digit   
-temp = temp/10;   
-}  
-//compares the sum with n  
-if(n==sum)   
-//returns if sum and n are equal  
-return true;      
-//returns false if sum and n are not equal  
-else return false;   
-}   
-//driver code  
-public static void  main(String args[])     
-{     
-int num;   
-Scanner sc= new Scanner(System.in);  
-System.out.print("Enter the number: ");  
-//reads the limit from the user  
-num=sc.nextInt();  
-if(isArmstrong(num))  
-{  
-System.out.print("Armstrong ");  
-}  
-else   
-{  
-System.out.print("Not Armstrong ");  
-}  
-}   
-}  
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+int n=371;
+int originalnumber=n;
+        int rem;
+        int temp=n;
+        int t=n;
+        int count=0;
+       
+        while(temp>0){
+            temp=temp/10;
+            count++;
+        }
+        System.out.println(count);
+        int strong=0;
+        while(t>0){
+           
+            rem=t%10;
+            strong+=Math.pow(rem,count);
+            t/=10;
+        }
+        if(strong==originalnumber){
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
+        }
+       
+}}
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int n = 371;           // 1. The number to check if it's an Armstrong number.
+        int originalnumber = n; // 2. Store the original number for later comparison.
+        int rem;               // 3. A variable to store the remainder when extracting digits.
+        int temp = n;          // 4. A temporary variable used to calculate the number of digits in the number.
+        int t = n;             // 5. Another temporary variable used for calculating the Armstrong sum.
+        int count = 0;         // 6. To count the number of digits in the number.
+        
+        // 7. Count the number of digits in the number `n`
+        while (temp > 0) {
+            temp = temp / 10;  // 8. Divide the number by 10 to remove the last digit.
+            count++;           // 9. Increment the digit count.
+        }
+        
+        System.out.println(count); // 10. Print the number of digits in the number.
+        
+        int strong = 0;           // 11. To store the sum of the digits raised to the power of `count`.
+        
+        // 12. Calculate the Armstrong sum: sum of each digit raised to the power of `count`.
+        while (t > 0) {
+            rem = t % 10;         // 13. Extract the last digit using modulo 10.
+            strong += Math.pow(rem, count); // 14. Add the digit raised to the power of `count` to `strong`.
+            t /= 10;              // 15. Remove the last digit by dividing `t` by 10.
+        }
+        
+        // 16. Compare the calculated Armstrong sum with the original number.
+        if (strong == originalnumber) {
+            System.out.println("Yes");  // 17. If the Armstrong sum equals the original number, print "Yes".
+        } else {
+            System.out.println("No");   // 18. Otherwise, print "No".
+        }
+    }
+}
+
 ```
 
 ##  Adam Number
