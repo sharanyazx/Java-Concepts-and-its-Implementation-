@@ -270,37 +270,7 @@ public class Main
 ```
 ## Armstrong number
 ```java []
-import java.util.*;
-public class Main
-{
-public static void main(String[] args) {
-int n=371;
-int originalnumber=n;
-        int rem;
-        int temp=n;
-        int t=n;
-        int count=0;
-       
-        while(temp>0){
-            temp=temp/10;
-            count++;
-        }
-        System.out.println(count);
-        int strong=0;
-        while(t>0){
-           
-            rem=t%10;
-            strong+=Math.pow(rem,count);
-            t/=10;
-        }
-        if(strong==originalnumber){
-            System.out.println("Yes");
-        }
-        else{
-            System.out.println("No");
-        }
-       
-}}
+
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
