@@ -641,3 +641,29 @@ public class Main {
 }
 
 ````
+## Printing Alphabets
+``` java []
+
+public class Main {
+    public static void main(String[]args){
+        
+        int row = 5;
+        for(int i=0;i<row;i++){ //row 
+            for (char j='a';j<='z' ;j++ ){ // column
+                System.out.print(j+" ");
+            } 
+            System.out.println();
+        }
+        }
+    }
+
+```
+## output
+```
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+
+```
